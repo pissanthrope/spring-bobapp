@@ -1,23 +1,31 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 
 <html lang="en">
 
-<jsp:include page="fragments/headTag.jsp"/>
+<jsp:include page="fragments/headTag.jsp" />
 
 <body>
-<div class="container">
-    <jsp:include page="fragments/bodyHeader.jsp"/>
-    <h2><fmt:message key="welcome"/></h2>
-    <spring:url value="/resources/images/pets.png" htmlEscape="true" var="petsImage"/>
-    <img src="${petsImage}"/>
+	<div class="container">
+		<jsp:include page="fragments/bodyHeader.jsp" />
+		<%--   <h2><fmt:message key="welcome"/></h2>
+     <spring:url value="/resources/images/pets.png" htmlEscape="true" var="petsImage"/>
+    <img src="${petsImage}"/> --%>
 
-    <jsp:include page="fragments/footer.jsp"/>
+		<div class="jumbotron">
+			<h1>Todo</h1>
+			<ul>
+				<li>Login/Security</li>
+				<li>Database (ORM and/or MySQL)
+			</ul>
+		</div>
 
-</div>
+		<jsp:include page="fragments/footer.jsp" />
+
+	</div>
 </body>
 
 </html>

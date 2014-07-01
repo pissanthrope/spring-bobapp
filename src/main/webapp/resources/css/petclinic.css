@@ -1,21 +1,15 @@
-.container {
-    padding-top: 10px;
-    margin-left: 50px;
-    width: 700px;
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #777777;
+  background-image: url('http://subtlepatterns.com/patterns/cream_pixels.png');
+  background-attachment: fixed;
 }
 
-.form-horizontal {
-    width: 100%;
+.navbar {
+  margin-bottom: 20px;  
 }
 
-input[type="text"] {
-    height: 25px;
-}
-
-.navbar .nav > li > a {
-    color: #000000;
-}
-
-.form-horizontal .control-label {
-    text-align: left;
+navbar-default {
+	color: #66FF33;
 }
